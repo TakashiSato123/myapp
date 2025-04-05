@@ -23,5 +23,5 @@ jobs:
         username: ${{ secrets.EC2_USER_NAME }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          cd /var/www
+          cd /myapp
           git pull origin main
