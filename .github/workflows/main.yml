@@ -1,15 +1,19 @@
 name: Deploy to EC2
 
 on:
-  pull_request:
+  push:
     branches:
       - main
-    types: [closed]
+
+  #pull_request:
+    #branches:
+      #- main
+    #types: [closed]
   workflow_dispatch:
 
 jobs:
   deployment:
-    if: github.event.pull_request.merged == true
+    #if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
