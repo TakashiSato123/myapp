@@ -28,5 +28,6 @@ jobs:
         username: ${{ secrets.EC2_USER_NAME }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          cd /myapp
-          git pull origin main
+          ssh -vv ec2-user@192.168.1.26
+          #cd /myapp
+          #git pull origin main
