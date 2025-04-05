@@ -1,4 +1,4 @@
-import app
+from app_instance import app
 
 @app.route('/')
 def home():
